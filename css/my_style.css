@@ -1,0 +1,104 @@
+.side_bar{
+    position: fixed;
+    left: 10px;
+    top: 0;
+    height: 100%;
+    z-index: 9000;
+}
+.side_bar > div{
+    height: 100%
+}
+.side_bar_item{
+    margin-bottom: 20px;
+}
+.side_bar_item .icon{
+    width: 60px;
+    min-height: 60px;
+    background-image: linear-gradient(to bottom,#10a482,#159f86); 
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer
+}
+.side_bar_item .content{
+    width: 160px;
+    min-height: 60px;
+    background-image: linear-gradient(to bottom,#10a482,#159f86);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: "Raleway";
+    line-height: 26px;
+    text-transform: none;
+    letter-spacing: 0px;
+    color: white;
+    display: none
+}
+.side_bar_item .icon img{
+    width: 100%;
+    height: 100%
+}
+.sub_menu{
+    width: 270px;
+    background-image: linear-gradient(to bottom,#20bb9c,#20bb9c);
+    border-radius: 5px;
+    display: none
+}
+.sub_menu_level_0{
+    position: absolute;
+    top: 65px;
+    left: 20px;
+}
+.sub_menu_item{
+    min-height: 50px;
+    padding: 5px;
+    border-radius: 5px;
+    padding-top: 10px;
+    cursor: pointer
+}
+.sub_menu_item_gabarie{
+    min-height: 50px;
+    padding: 0px;
+}
+.sub_menu_item:hover{
+    background-image: linear-gradient(to bottom,#4cc8b0,#4cc8b0);
+}
+.ng_click{
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 10px;    
+    height: 50px
+}
+.nb_click_side_bar_item{
+    padding-top: 17px;
+    padding-left: 20px
+}
+.sub_menu_item_img{
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 10px
+}
+@media(min-width: 800px){
+    .sub_menu_item .sub_menu{
+        position: absolute;
+        left: 100%;
+        top: 0;
+    }
+}
+@media(max-width: 800px){
+    .side_bar{
+        overflow-y: scroll;
+    }
+    .sub_menu_item .sub_menu{
+        border-left: white 4px solid;
+        margin-left: 5px
+    }
+    .side_bar_item .content{
+        width: 70%
+    }
+    .sub_menu{
+        width: 92%
+    }
+}
